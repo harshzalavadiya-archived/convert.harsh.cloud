@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URI Encode Decode</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/">🏠</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">URL Encode/Decode</a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="form-group">
+        <label class="form-label" for="input-txt">Input</label>
+        <textarea class="form-input" id="input-txt" rows="10"></textarea>
+      </div>
+
+      <div class="buttons">
+        <button type="button" class="btn btn-primary btn-lg" onClick="encode()">
+          Encode
+        </button>
+
+        <button type="button" class="btn btn-primary btn-lg" onClick="decode()">
+          Decode
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const inputTxt = document.querySelector("#input-txt");
+
+      const encode = () => {
+        inputTxt.value = encodeURI(inputTxt.value);
+      };
+
+      const decode = () => {
+        inputTxt.value = decodeURI(inputTxt.value);
+      };
+    </script>
+  </body>
+</html>
