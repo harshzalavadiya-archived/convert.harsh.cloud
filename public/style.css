@@ -1,0 +1,21 @@
+@import url("https://unpkg.com/spectre.css/dist/spectre.min.css");
+@import url("https://unpkg.com/spectre.css/dist/spectre-exp.min.css");
+
+.container {
+  max-width: 800px;
+  padding-bottom: 1.5rem;
+}
+
+footer,
+header {
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+header {
+  border-bottom: 0.05rem solid #bcc3ce;
+}
+
+footer {
+  border-top: 0.05rem solid #bcc3ce;
+}
