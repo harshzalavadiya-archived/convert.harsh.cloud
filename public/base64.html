@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>URI</title>
+    <title>Base64</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
@@ -15,7 +15,7 @@
             <a href="/">🏠</a>
           </li>
           <li class="breadcrumb-item">
-            <a href="#">URL</a>
+            <a href="#">Base64</a>
           </li>
         </ul>
       </header>
@@ -40,11 +40,11 @@
       const inputTxt = document.querySelector("#input-txt");
 
       const encode = () => {
-        inputTxt.value = encodeURI(inputTxt.value);
+        inputTxt.value = btoa(inputTxt.value);
       };
 
       const decode = () => {
-        inputTxt.value = decodeURI(inputTxt.value);
+        inputTxt.value = atob(inputTxt.value);
       };
     </script>
   </body>
