@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/hc-oss/convert#readme",
   "devDependencies": {
-    "http-server": "^13.0.2"
+    "http-server": "latest"
   }
 }
